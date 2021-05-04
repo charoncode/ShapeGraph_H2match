@@ -1,0 +1,29 @@
+% constructSplineData.m: function that creates a structure containing essential B-spline parameters and
+% sets default values. Parameters are:
+%
+% splineData.N : number of spline control points for spatial discretization (default N = 100)
+% splineData.nS: degree of B-splines in space (default nS = 2, quadratic splines needed for H2 metric)
+% splineData.Nt: number of spline control points for time discretization (default Nt = 10)
+% splineData.nT: degree of B-splines in time (default nT = 1, i.e, linear splines for time discretization)
+% splineData.curveClosed: set to 0 for open curves, 1 for closed curves 
+% splineData.dSpace: dimension of ambient space (default dSpace = 2)
+% splineData.quadDegree: (default [6 4])
+% splineData.quadData: structure for collocation matrices for quadrature knots for B-splines (default, empty)
+% splineData.quadDataTensor: structure for collocation matrices for quadrature knots for tensor product B-splines (default, empty)
+
+
+function splineData = constructSplineData
+
+splineData = struct(...
+    'N', 100, ...
+    'nS', 2, ...
+    'Nt', 10, ...
+    'nT', 1, ...
+    'curveClosed', 0, ...
+    'dSpace', 2, ...
+    'quadDegree', [6 4], ...
+    'quadData', [], ...
+    'quadDataTensor', []);
+
+end
+
