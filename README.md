@@ -7,13 +7,15 @@ This repository houses code for performing relaxed weighted shape graph matching
 The code is a MATLAB implementation of the numerical optimization scheme proposed in [A new variational model for the analysis of shape graphs with partial matching constraints](https://arxiv.org/abs/2105.00678) by Yashil Sukurdeep, Martin Bauer and Nicolas Charon. For details, we refer to our paper:
 
 ```
-    @misc{sukurdeep2021new,
-      title={A new variational model for the analysis of shape graphs with partial matching constraints}, 
-      author={Yashil Sukurdeep and Martin Bauer and Nicolas Charon},
-      year={2021},
-      eprint={2105.00678},
-      archivePrefix={arXiv},
-      primaryClass={math.OC}
+@article{sukurdeep2022new,
+  title={A new variational model for shape graph registration with partial matching constraints},
+  author={Sukurdeep, Yashil and Bauer, Martin and Charon, Nicolas},
+  journal={SIAM Journal on Imaging Sciences},
+  volume={15},
+  number={1},
+  pages={261--292},
+  year={2022},
+  publisher={SIAM}
 }
 ```
 
